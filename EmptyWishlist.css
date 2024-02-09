@@ -1,0 +1,74 @@
+.EmptyWishlist-Section{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    height: 100vh;
+}
+
+.Breadcrumb-Nav{
+    list-style: none;
+    font-family: 'Inter',sans-serif;
+    color: rgba(1, 88, 152, 1);
+    display: flex;
+    align-items: center;
+    margin-top: 1.50rem;
+}
+
+.Breadcrumb-Nav li{
+    display: inline-block;
+    font-size: 16px;
+}
+
+.Breadcrumb-Nav li::after{
+    content: " > ";
+    font-weight: bold;
+}
+
+.Breadcrumb-Nav li:last-child::after{
+    content: "";    
+}
+
+.Breadcrumb-Nav a{
+    font-weight: normal;
+    text-decoration: none;
+    color: rgba(1, 88, 152, 1);
+}
+
+.Breadcrumb-Nav a:hover{
+    text-decoration: underline;
+}
+
+.EmptyWishlist-Container {
+    position: relative;
+    margin-top: 50px;
+    width: 1118px; 
+    height: 600px; 
+    border-radius: 10px;
+    box-shadow: 0 4px 50px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 90px;
+}
+
+.EmptyWishlist-Container p, .EmptyWishlist-Container a{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.EmptyWishlist-Container a{
+    background-color: rgba(11, 65, 111, 1);
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    width: 306px;
+    height: 49px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}

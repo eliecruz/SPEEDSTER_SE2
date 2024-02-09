@@ -1,0 +1,119 @@
+a{
+    text-decoration: none;
+    color: rgba(0, 29, 108, 1);
+}
+
+.Signup-Section {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+    background-image: url('https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/a8ded213-17b0-4a5a-8b9a-88bba0cc93a4/412df49e-63a5-4ca5-b0cd-b90dafb8d957?org_if_sml=131212&amp;force_format=original');
+    background-size:contain; 
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.Signup-Container {
+    position: relative;
+    width: 720px;
+    height: 755px;
+    padding: 80px;
+    font-size: 14px;
+}
+
+.Signup-Container h2 {
+    margin-bottom: 48px;
+    font-size: 42px;
+}
+
+.Signup-Container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.Signup-Container label {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.Signup-Container .name-fields {
+    display: flex;
+    gap: 16px; /* Adjust the gap as needed */
+}
+
+.Signup-Container .name-fields input {
+    width: 272px;
+    margin-bottom: 16px;
+    background-color: rgb(242, 244, 248);
+    border: none;
+    border-bottom: 1px solid;
+    border-color: rgba(193, 199, 205, 1);
+    height: 48px;
+}
+
+.Signup-Container input {
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 16px;
+    background-color: rgb(242,244,248);
+    border: none;
+    border-bottom: 1px solid;
+    border-color: rgba(193, 199, 205, 1);
+    height: 48px;
+}
+
+#password {
+    margin-bottom: 4px; /* Adjust the margin as needed */
+}
+
+.password-info {
+    color: #888;
+    font-size: 12px;
+    margin-bottom: 16px;
+}
+
+.Signup-Container button {
+    padding: 10px;
+    background-color: rgba(1, 88, 152, 1);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 16px;
+    margin-bottom: 30px;
+    height: 48px;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Signup-Container button.google-btn {
+    background-color: white;
+    color: rgba(1, 88, 152, 1);
+    border-color: rgba(1, 88, 152, 1);
+    border: 2px solid;
+    font-weight: 600;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+}
+
+.Signup-Container i{
+    margin-right: 10px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.Custom-line{
+    background-color: rgba(221, 225, 230, 1); /* Line color for older browsers */
+    height: 1px; /* Line thickness */
+    border: none; /* No border */
+    margin-bottom: 48px;
+}
+

@@ -1,0 +1,272 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Set minimum height to cover the entire viewport */
+    margin: 0;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    background: rgb(11, 65, 111);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Logo {
+    display: flex;
+    align-items:center;
+    height: 100%;
+    width: 20%;
+    padding-left: 4%;
+}
+
+.Inbilla{
+    display: flex;
+    align-self: flex-start;
+}
+
+
+.Logo .InbillaText {
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  
+}
+
+.Logo h1 {
+    font-size: 1.3rem;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: bold;
+    margin-bottom: -3px; 
+}
+
+.Logo h5 {
+    font-size: .7rem;
+    font-family: 'Montserrat', system-ui;
+    font-weight: normal;
+    margin: 0; /* Remove default margin */
+    
+}
+
+.NavList{
+    display: flex;
+    list-style: none;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.NavList li{
+    margin: 0 30px;
+
+}
+
+.NavList a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    
+}
+
+.Search,.Cart,.Login-Button{
+    padding: 10px 20px;
+}
+.Search{
+    height: 40px;
+    display: flex;
+    cursor: pointer;
+    background:transparent;
+    align-items: center;
+}
+
+.Search:hover input{
+    width: 150px;
+}
+
+.Search input{
+    width: 0;
+    outline: none;
+    border: none;
+    transition: 0.8s;
+    background: transparent;
+    color: white;
+}
+
+.Search a, .Cart a, .Profile a{
+    color: white;
+    font-size: 1.3rem;
+
+}
+
+.Cart{
+    height: 40px;
+    display: flex;  
+    align-items: center;
+}
+
+.Login-Button{
+    height: 40px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 100px;
+    background:white;
+    align-items: center;
+}
+
+.Login-Button a{
+    color: rgb(11, 65, 111);
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.NavIcons{
+    display: flex;
+    width: 20%;
+    align-items: center;
+    justify-content:center;
+    margin-right: 3% ;
+
+}
+
+.Dropdown {
+    position: relative;
+}
+
+.DropdownContent {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 200px;
+    background: rgb(11, 65, 111);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    padding-top: 30px;
+}
+
+.Dropdown:hover .DropdownContent {
+    display: block;
+}
+
+.DropdownContent a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.DropdownContent a:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.Footer{
+    background-color: rgb(12, 87, 149);
+    line-height: 1.5;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: auto;
+    height: auto;
+}
+
+.Container{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 40px; 
+
+}
+
+ul{
+    list-style: none;
+}
+
+.Row{
+    display: flex;
+    gap: 130px
+}
+.Footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.Footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+}
+.Footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.Footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.Footer-col ul li a:hover{
+    color: #bbbbbb;
+}
+
+.Footer-col .Social-links a{
+    display: inline-block;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.Footer-col .Social-links a:hover{
+    color: #24262b;
+}
+
+.Row2{
+    display: flex;
+    background-color: rgb(11, 65, 111);
+    justify-content: space-between;
+    padding: 20px 50px;
+    height: auto;
+}
+
+.Col p{
+    color: white;
+}
+
+.TermsandPrivacy a{
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.Profile{
+    height: 40px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    padding: 10px 20px;
+  
+}
