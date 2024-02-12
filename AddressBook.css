@@ -142,11 +142,15 @@
 
 .Buttons{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     margin-top: auto;
 }
 
 .AddAddress-Button{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 184px;
     height: 50px;
     color: white;
