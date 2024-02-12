@@ -60,10 +60,10 @@
 }
 
 .EmptyCart-Container a{
-    background-color: rgba(196, 196, 196, 1);
+    background-color: rgba(12, 87, 149, 1);
     border-radius: 10px;
     text-decoration: none;
-    color: black;
+    color: white;
     width: 306px;
     height: 49px;
     display: flex;
