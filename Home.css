@@ -167,7 +167,6 @@ a{
     background-size: contain;
     background-position: bottom;
     background-repeat: no-repeat;
-    z-index: -1;
 }
 
 .BestSeller-Container{
@@ -262,6 +261,4 @@ a{
     width: 145px;
     height: 30px;
 }
-
-
 
