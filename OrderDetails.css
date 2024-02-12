@@ -194,6 +194,12 @@
     margin-bottom:10px;
 }
 
+.Fees{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
 .Total{
     display: flex;
     justify-content: space-between;
