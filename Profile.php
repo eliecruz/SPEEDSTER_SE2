@@ -23,9 +23,9 @@
             <ul>
                 <li><a href="Profile.php">Account Information</a></li>
                 <li><a href="AddressBook.php">Address Book</a></li>
-                <li><a href="#">Order History</a></li>
-                <li><a href="#">Wishlist</a></li>
-                <li><a href="#">Submit Ticket</a></li>
+                <li><a href="MyOrders.php">Order History</a></li>
+                <li><a href="Wishlist.php">Wishlist</a></li>
+                <li><a href="Ticket.php">Submit Ticket</a></li>
                 <li><a href="#">Account Settings</a></li>
             </ul>
         </div>
