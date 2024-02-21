@@ -97,7 +97,7 @@
     font-size: 14px;
 }
 
-.User-Info .Password-fields, .Id-Field, .BdayGender-Field{
+.User-Info .Password-fields{
     display: flex;
     gap: 62px;
 }
