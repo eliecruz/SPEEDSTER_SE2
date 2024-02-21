@@ -76,7 +76,7 @@
         </form>
 
         <div class="Buttons">
-        <button class="ChangePass">Change Password</button>
+        <a href="EditProfile.php" class="ChangePass">Change Password</a>
         <button class="Edit">Edit Profile</button>
         </div>
 
