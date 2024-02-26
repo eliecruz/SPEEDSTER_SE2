@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Set minimum height to cover the entire viewport */
+    margin: 0;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    background: rgb(11, 65, 111);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Logo {
+    display: flex;
+    align-items:center;
+    height: 100%;
+    width: 250px;
+}
+
+.Inbilla{
+    display: flex;
+    align-self: flex-start;
+    padding-bottom: 15px;
+}
+
+
+.Logo .InbillaText {
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  
+}
+
+.Logo h1 {
+    font-size: 1.3rem;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: bold;
+    margin-bottom: -3px; 
+}
+
+.Logo h5 {
+    font-size: .7rem;
+    font-family: 'Montserrat', system-ui;
+    font-weight: normal;
+    margin: 0; /* Remove default margin */
+}
+
+.Logo::after{
+    content: "";
+    width: 1px;
+    height: 45px;
+    display: block;
+    background-color: white;
+    position: absolute;
+    left: 260px;
+    
+}
+
+.Header-page{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 60px;
+}
+
+.Header-page h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+.Profile{
+    height: 40px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    padding: 10px 20px;
+    margin-right: 5%;
+    gap: 5px;
+  
+}
+
+.Profile a{
+    color: white;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+
+
