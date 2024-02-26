@@ -122,7 +122,7 @@ tbody tr {
 
 .pagination{
     justify-content: flex-end;
-    margin-top: 20px;
+    margin-top: 50px;
     list-style: none;
     display: flex;
     text-decoration: none;
