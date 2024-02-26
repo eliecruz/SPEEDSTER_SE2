@@ -20,11 +20,11 @@
     <nav class="side-navbar">
         <ul>
             <li><a href="#"><img src="Images\Dashboard.png">Dashboard</a></li>
-            <li><a href="#"><img src="Images\Products.png">Products</a></li>
-            <li><a href="#"><img src="Images\Orders.png">Orders</a></li>
-            <li><a href="#"><img src="Images\Accounts.png">Accounts</a></li>
-            <li><a href="#"><img src="Images\Tickets.png">Tickets</a></li>
-            <li><a href="#"><img src="Images\Feedbacks.png">Feedbacks</a></li>
+            <li><a href="ManageProducts.php"><img src="Images\Products.png">Products</a></li>
+            <li><a href="ManageOrders.php"><img src="Images\Orders.png">Orders</a></li>
+            <li><a href="ManageAccounts.php"><img src="Images\Accounts.png">Accounts</a></li>
+            <li><a href="ManageTickets.php"><img src="Images\Tickets.png">Tickets</a></li>
+            <li><a href="Feedbacks.php"><img src="Images\Feedbacks.png">Feedbacks</a></li>
             <li><a href="#"><img src="Images\Promotion.png">Promotions</a></li>
             <li><a href="#"><img src="Images\Settings.png">Settings</a></li>
         </ul>
