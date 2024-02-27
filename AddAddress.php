@@ -1,3 +1,10 @@
+<?php
+    session_start();
+    if(isset($_SESSION['user_id'])) {
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,6 +18,7 @@
 <body>
     <?php
     include('Header.php')
+
     ?>
 <div class="Profile-Container">
     <div class="SideMenu-Container">
@@ -38,65 +46,64 @@
         <h1>Add New Address</h1>
         <hr>
 
-        <form class="UserAddressInfo">
+        <form class="UserAddressInfo" action="backend/insert_Address.php" method="post">
             <div class="Field1">
                 <div class="Label-Input">
                     <label for="full-Name">Full Name</label>
-                    <input type="text" id="full-Name" placeholder="Full Name">
+                    <input type="text" id="full-Name" disabled placeholder="Full Name" value = "<?php echo $row['first_Name'] ?> <?php echo $row['last_Name'] ?> ">
                 </div>
                 <div class="Label-Input">
                     <label for="Mobile-Num">Mobile Number</label>
-                    <input type="text" id="Mobile-Num" placeholder="Mobile Number">
+                    <input type="text" id="Mobile-Num" disabled placeholder="Mobile Number" value = "<?php echo $row['contact_Num'] ?> " >
                 </div>
             </div>
 
                 <label for="Location">House/Unit/Floor No., Building Name,, Block or Lot No.</label>
-                <input type="text" id="Location" placeholder="House/Unit/Floor No., Building Name,, Block or Lot No.">
+                <input type="text" name="Location" required placeholder="House/Unit/Floor No., Building Name,, Block or Lot No.">
                 
         <div class="Field2">
             <div class="Label-Input">
-                <label for="province">Province</label>
-                <select id="province" name="province">
-                    <option value="province1">Province 1</option>
-                    <option value="province2">Province 2</option>
-                    <!-- Add more options as needed -->
-                </select>
+                <label for="city">City/Municipality, Province</label>
+                <input type="text" name="City" required placeholder="City/Municipality, Province">
+                   
+                
             </div>
             <div class="Label-Input">
-                <label for="cityMunicipality">City/Municipality</label>
-                <select id="cityMunicipality" name="cityMunicipality">
-                    <option value="city1">City 1</option>
-                    <option value="city2">City 2</option>
-                    <!-- Add more options as needed -->
-                </select>
+                <label for="Barangay">Barangay</label>
+                <input type="text" name="barangay" required placeholder="Barangay">
+               
+                
             </div>
         </div>
 
         <div class="Field3">
             <div class="Label-Input">
-                <label for="barangay">Barangay</label>
-                <select id="barangay" name="barangay">
-                    <option value="barangay1">Barangay 1</option>
-                    <option value="barangay2">Barangay 2</option>
-                    <!-- Add more options as needed -->
-                </select>
+                <label for="postal">Postal Code</label>
+                <input type="text" pattern="[0-9]{4}" name="postalCode" required placeholder="Postal Code">
+        
             </div>
             <div class="Label-Input">
                 <label for="deliveryCategory">Select Category for Effective Delivery</label>
                 <select id="deliveryCategory" name="deliveryCategory">
                     <option value="home">Home</option>
                     <option value="office">Office</option>
-                    <!-- Add more options as needed -->
+                  
                 </select>
             </div>
         </div>
-        </form>
 
+        
         <div class="Buttons">
-        <button class="CancelButton">Cancel</button>
+        
         <button class="SaveButton">Save</button>
         </div>
-
+        </form>
+        <div class="Buttons">
+        
+        <form action="AddressBook.php">
+        <button class="CancelButton">Cancel</button>
+        </form>
+        </div>
     </div>
 </div>
 
@@ -108,3 +115,18 @@
 
 
 </html>
+<?php 
+    }
+    else {
+
+      ?>
+      <script type="text/javascript">
+      window.location.href = 'Home.php';
+      </script>
+
+      <?php 
+
+    }
+
+
+?>
