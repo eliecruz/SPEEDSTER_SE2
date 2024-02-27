@@ -13,7 +13,7 @@
             <div class="Footer-col">
                 <h4>Company</h4>
                 <ul>
-                    <li><a href="#">About Us</a></li>
+                    <li><a href="About.php">About Us</a></li>
                     <li><a href="#">Contact Us</a></li>
                 </ul>
             </div>
@@ -38,8 +38,8 @@
             <p>Philippines | &#169; 2024 Inbilla Trading. All Rights Reserved.</p>
         </div>
         <div class="TermsandPrivacy">
-            <a href="#">Terms of Use</a>
-            <a href="#">Privacy Policy</a>
+            <a href="Terms.php">Terms of Use</a>
+            <a href="Privacy.php">Privacy Policy</a>
         </div>
     </div>
     </footer>
