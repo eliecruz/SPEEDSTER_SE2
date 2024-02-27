@@ -122,8 +122,9 @@
     align-items: center;
     justify-content: center;
     border-radius: 50px;
-    background-color: rgba(190, 253, 174, 1);
+    background-color: rgb(248, 7, 7);
     color: black;
+    cursor: pointer;
     width: 65px;
     height: 21px;
     font-size: 12px;
