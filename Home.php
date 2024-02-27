@@ -1,4 +1,7 @@
 <?php
+    include('connect.php');
+   
+   
     
 ?>
 
@@ -67,77 +70,48 @@
             </a>
         </div>
     </div>
-    
+  
     <div class="BestSeller-Section">
+           
         <div class="BestSeller-Container">
             <h5>Featured Products</h5>
             <h3>OUR BEST SELLERS</h4>
             <p>Problems Trying to resolve the conflict between</p>
 
+
             <div class="Card-Container">
-                <div class="Card">
-                    <div class="Card-Content">
-                    <img src="http://localhost/InbillaDraft/Images/Epson M100.png" >
-                        <h5>Epson M100 Mono Ink Tank Printer</h1>
-                        <p>EPSON</p>
-                        <h4>₱6,815.00</h4>
-                    </div>
-                    <a href="#" class=View-Product>View Product</a>
-                </div>
-                <div class="Card">
-                    <div class="Card-Content">
-                    <img src="http://localhost/InbillaDraft/Images/Epson M100.png" >    
-                        <h5>Epson M100 Mono Ink Tank Printer</h1>
-                        <p>EPSON</p>
-                        <h4>₱6,815.00</h4>
-                    </div>
-                    <a href="#" class=View-Product>View Product</a>
-                </div>
-                <div class="Card">
-                    <div class="Card-Content">
-                    <img src="http://localhost/InbillaDraft/Images/Epson M100.png" >
-                        <h5>Epson M100 Mono Ink Tank Printer</h1>
-                        <p>EPSON</p>
-                        <h4>₱6,815.00</h4>
-                    </div>
-                    <a href="#" class=View-Product>View Product</a>
-                </div>
-                <div class="Card">
-                    <div class="Card-Content">
-                    <img src="http://localhost/InbillaDraft/Images/Epson M100.png" >
-                        <h5>Epson M100 Mono Ink Tank Printer</h1>
-                        <p>EPSON</p>
-                        <h4>₱6,815.00</h4>
-                    </div>
-                    <a href="#" class=View-Product>View Product</a>
-                </div>
-                <div class="Card">
-                    <div class="Card-Content">
-                    <img src="http://localhost/InbillaDraft/Images/Epson M100.png" >
-                        <h5>Epson M100 Mono Ink Tank Printer</h1>
-                        <p>EPSON</p>
-                        <h4>₱6,815.00</h4>
-                    </div>
-                    <a href="#" class=View-Product>View Product</a>
-                </div>
-                <div class="Card">
-                    <div class="Card-Content">
-                    <img src="http://localhost/InbillaDraft/Images/Epson M100.png" >
-                        <h5>Epson M100 Mono Ink Tank Printer</h1>
-                        <p>EPSON</p>
-                        <h4>₱6,815.00</h4>
-                    </div>
-                    <a href="#" class=View-Product>View Product</a>
-                </div>
+
+            <?php 
+                $productquery = "SELECT TOP 6 * FROM Products";
+                $productResult = sqlsrv_query($conn, $productquery);
                 
+                while($product = sqlsrv_fetch_array($productResult, SQLSRV_FETCH_ASSOC)){
+            
+             ?>
+                <div class="Card">
+              
+                        <div class="Card-Content">
+                            <img src="http://localhost/InbillaDraft/Images/<?php echo $product['product_Image']?>"  >
+                            <h5><?php echo $product['product_Name']?></h1>
+                            <p><?php echo $product['brand_ID']?></p>
+                            <h4><?php echo $product['product_Price']?></h4>
+                        </div>
+                        <a href="#" class=View-Product>View Product</a>
+                </div>
+            <?php
+                }
+            ?>
+            
             </div>
         </div>
+
+        
     </div>
+   
     
 <?php
 include('Footer.php');
 ?>
 </body>
-
 </html>
 
