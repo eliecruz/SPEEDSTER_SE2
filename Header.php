@@ -22,7 +22,7 @@
                 </div>
             </li>
             <li>
-                <a href="#">About</a>
+                <a href="About.php">About</a>
             </li>
             <li>
                 <a href="#">Contact</a>
@@ -42,14 +42,22 @@
             </a>
         </div>
         <?php
-            
-
+                 if (!isset($_SESSION)) {
+                    session_start();
+                }
+                 
+             
             if(isset($_SESSION['user_id'])){ 
 
+                $customer_ID = $_SESSION['user_id'];
 
+                include("connect.php");
+                $query = "SELECT * FROM Customers WHERE customer_ID = '$customer_ID'";
+                $result = sqlsrv_query($conn, $query);
+                $row = sqlsrv_fetch_array( $result, SQLSRV_FETCH_ASSOC);
                 ?>
                 <div class="Profile">
-                <a href="Login.php"><i class="fa-regular fa-user"></i></a>
+                <a href="Profile.php"><i class="fa-regular fa-user"></i><?php echo $row['first_Name'];?></a>
                 </div>
                 <?php
                 
