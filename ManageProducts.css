@@ -7,7 +7,7 @@
 .side-navbar {
     margin: 20px;
     width: 300px;
-    height: 950px;
+    min-height: 950px;
     background: white;
     color: rgba(88, 88, 88, 1);
     padding: 20px;
@@ -49,7 +49,7 @@
 .Table-Section{
     margin: 20px;
     width: 1200px;
-    height: 950px;
+    min-height: 950px;
     background: white;
     padding: 20px;
     box-shadow: 0 4px 50px 5px rgba(0, 0, 0, 0.09);
@@ -114,7 +114,7 @@ table {
     border-collapse: collapse;
     margin-top: 10px;
     display: table;
-    table-layout: auto;
+    table-layout: fixed;
 }
 
 th, td {
@@ -170,4 +170,14 @@ tbody tr {
 
 .pagination li.active a{
     color: white;
+}
+
+/* Handling long text */
+th, td {
+    padding: 10px;
+    text-align: left;
+    height: 65px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
