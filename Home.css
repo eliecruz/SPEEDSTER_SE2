@@ -160,8 +160,8 @@ a{
 
 .BestSeller-Section {
     position: relative;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     overflow: hidden;
     background-image: url('https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/a8ded213-17b0-4a5a-8b9a-88bba0cc93a4/412df49e-63a5-4ca5-b0cd-b90dafb8d957?org_if_sml=131212&amp;force_format=original');
     background-size: contain;
@@ -215,8 +215,9 @@ a{
 }
 
 .Card img{
-    width: 100%;
-    height: auto;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
 }
 
 .Card-Content{
@@ -261,5 +262,4 @@ a{
     width: 145px;
     height: 30px;
 }
-
 
