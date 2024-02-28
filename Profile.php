@@ -136,14 +136,8 @@
                 </div>
             </div>
 
-            <div class="BdayGender-Field">
-                <div class="Label-Input">
-                    <Label for="Birthday">Birthday</Label>
-                    <input type="text" id="Birthday"placeholder="Birthday" disabled value=<?php if (isset($row['gender'])) {
-                                                                            echo $row['gender'];
-                                                                            }
-                                                                            ?> >
-                </div>
+            <div class="Gender-Field">
+                
                 <div class="Label-Input">
                     <Label for="Gender">Gender</Label>
                     <input type="text" name="Gender" required placeholder="Gender" <?php if(isset($_POST['edit'])){ } else {?> disabled <?php } ?> value=<?php if (isset($row['gender'])) {
@@ -171,16 +165,19 @@
                     <button class="Edit" type="submit" name="edit" value="edit">Edit Profile</button>
                     <?php
                 }
-            ?>                                                                   
+            ?>                                                            
            
             </div>
+
         </form>
 
-        <div class="Buttons">
+        <div class="Button-ChangePass">
             <form action="ChangePassword.php" method="post">
                 <button class="ChangePass" name="change" >Change Password</button>
-            </form>
+            </form>       
         </div>
+
+        
 
     </div>
 </div>
