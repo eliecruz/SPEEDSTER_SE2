@@ -69,6 +69,8 @@ header {
     list-style: none;
     flex-grow: 1;
     justify-content: center;
+    margin: 0;
+
 }
 
 .NavList li{
@@ -268,5 +270,18 @@ ul{
     cursor: pointer;
     align-items: center;
     padding: 10px 20px;
-  
 }
+
+
+.Profile a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    font-family: 'Montserrat',sans-serif;
+}
+
+.Profile p{
+    margin: 0;
+}
+
