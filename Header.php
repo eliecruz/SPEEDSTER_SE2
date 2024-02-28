@@ -1,4 +1,5 @@
 
+    <?php include("connect.php"); ?>
     <header>
         <div class="Logo">
             <span class="Inbilla"><a href="Home.php"><img src= "http://localhost/InbillaDraft/Images/Inbilla Logo.png" width="60" height="65"></a></span>
@@ -12,13 +13,29 @@
             <li>
                 <a href="Home.php">Home</a>
             </li>
+
+
+
+
             <li class="Dropdown">
                 <a href="#">Products</a>
                 <div class="DropdownContent">
-                    <a href="#">Printers</a>
-                    <a href="#">Consumables</a>
-                    <a href="#">Office Supplies</a>
-                    <a href="#">Accessories</a>
+
+                <?php 
+                
+                $query = "SELECT * FROM Categories";
+                $result = sqlsrv_query($conn, $query);
+
+                while ($row = sqlsrv_fetch_array( $result, SQLSRV_FETCH_ASSOC)) {
+                ?>
+
+                    <a href=""><?php echo $row['category_Label']  ?></a>
+                <?php
+                }
+                ?>
+
+
+
                 </div>
             </li>
             <li>
@@ -51,7 +68,6 @@
 
                 $customer_ID = $_SESSION['user_id'];
 
-                include("connect.php");
                 $query = "SELECT * FROM Customers WHERE customer_ID = '$customer_ID'";
                 $result = sqlsrv_query($conn, $query);
                 $row = sqlsrv_fetch_array( $result, SQLSRV_FETCH_ASSOC);
