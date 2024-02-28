@@ -27,10 +27,11 @@
 }
 
 .User-img{
-    width: 150px;
-    height: 150px;
+    margin-top: 50px;
+    width: 113px;
+    height: 113px;
     border-radius: 110px;
-    background-color: red;
+    background-image:url("Images/User.png");
 }
 
 .Navigator ul{
@@ -97,9 +98,13 @@
     font-size: 14px;
 }
 
-.User-Info .Name-fields, .Id-Field, .BdayGender-Field{
+.User-Info .Name-fields, .Id-Field{
     display: flex;
     gap: 62px;
+}
+
+.Gender-Field{
+    width: 350px;
 }
 
 
@@ -115,7 +120,7 @@
     height: 48px;
 }
 
-.Name-fields input, .Id-Field input, .BdayGender-Field input{
+.Name-fields input, .Id-Field input, .Gender-Field input{
     width: 345px;
 }
 
@@ -124,12 +129,34 @@
 }
 
 .Buttons{
-    display: flex;
-    justify-content: space-between;
-    margin-top: auto;
+    position: absolute;
+    bottom: 50px;
 }
 
-.ChangePass, .Edit{
+.Button-ChangePass{
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+}
+
+ .Edit{
+    width: 184px;
+    height: 50px;
+    color: white;
+    background-color: rgba(1, 88, 152, 1);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ChangePass{
     width: 184px;
     height: 50px;
     color: white;
