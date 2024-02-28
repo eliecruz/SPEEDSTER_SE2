@@ -27,10 +27,11 @@
 }
 
 .User-img{
-    width: 150px;
-    height: 150px;
+    margin-top: 50px;
+    width: 113px;
+    height: 113px;
     border-radius: 110px;
-    background-color: red;
+    background-image:url("Images/User.png");
 }
 
 .Navigator ul{
@@ -165,6 +166,9 @@
     background-color: rgba(1, 88, 152, 1);
     border: none;
     border-radius: 10px;
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
 }
 
 .CancelButton {
@@ -172,4 +176,11 @@
     background-color: rgba(196, 196, 196, 1);
     border: none;
     border-radius: 10px;
+    position: absolute;
+    right: 300px;
+    bottom: 50px;
+}
+
+.Label-Input input{
+    width: 345px;
 }
