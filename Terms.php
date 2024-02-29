@@ -15,6 +15,13 @@
     include('Header.php');
     ?>
 
+     <div class="Breadcrumb-Nav">
+        <ol>
+            <li><a href="Home.php">Home</a></li>
+            <li>Terms of Use</li>
+        </ol>
+    </div>
+
     <div class="terms">
         <div class="text">
             <h1>Terms of Use</h1>
