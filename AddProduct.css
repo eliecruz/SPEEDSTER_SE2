@@ -1,0 +1,154 @@
+.Main-Container{
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+}
+
+.Main-Container .side-navbar {
+    margin: 20px;
+    width: 300px;
+    height: 950px;
+    background: white;
+    color: rgba(88, 88, 88, 1);
+    padding: 20px;
+    box-shadow: 0 4px 50px 5px rgba(0, 0, 0, 0.09);
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+.Main-Container .side-navbar ul {
+    list-style: none;
+    padding: 10px 0;
+}
+
+.Main-Container .side-navbar ul li {
+    padding: 10px;
+}
+
+.Main-Container .side-navbar ul li a {
+    text-decoration: none;
+    color: rgba(88, 88, 88, 1);
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+
+}
+
+.Main-Container .side-navbar a:hover {
+    background-color: grey;
+}
+
+.Main-Container .side-navbar ul li:nth-child(2) a{
+    color: rgba(11, 65, 111, 1); 
+    font-weight: 600;
+}
+
+/* Form Container */
+.Form-Container{
+    margin: 20px;
+    width: 1200px;
+    height: 950px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 50px 5px rgba(0, 0, 0, 0.09);
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.Form-Container h2{
+    margin: 20px;
+}
+
+.Product-Info{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.Product-Field{
+    display: flex;
+
+    gap: 43px;
+}
+
+.Quantity-Field{
+    display: flex;
+    gap: 43px;
+}
+.Form-Container input, .Form-Container select{
+    padding-left: 16px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    background-color: rgb(242,244,248);
+    border: none;
+    border-bottom: 1px solid;
+    border-color: rgba(193, 199, 205, 1);
+    border-radius: 5px;  
+}
+
+.Product-Field input, .Quantity-Field input{
+    width: 284px;
+    height: 48px;
+}
+
+.Product-Field select, .Quantity-Field select{
+    width: 284px;
+    height: 48px;
+}
+.Description-Field{
+    display: flex;
+    flex-direction: column;
+}
+
+.Label-input{
+    margin: 20px 0;
+
+}
+
+.Buttons{
+    display: flex;
+    gap: 30px;
+    margin-top: auto;
+}
+.Buttons .add{
+    width: 184px;
+    height: 50px;
+    color: white;
+    background-color: rgba(1, 88, 152, 1);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.Buttons .cancel{
+    width: 184px;
+    height: 50px;
+    color: white;
+    background-color: #808080;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+textarea{
+    width: 637px;
+    height: 180px;
+    padding: 10px;
+    background-color: rgb(242, 244, 248);
+    border: none;
+    border-bottom: 1px solid;
+    border-color: rgba(193, 199, 205, 1);
+    border-radius: 5px;
+
+    font-family: "Roboto", sans-serif;
+    resize: none;
+}
