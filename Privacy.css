@@ -3,6 +3,44 @@
     margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
+
+/* Breadcrumb Nav */
+.Breadcrumb-Nav{
+    list-style: none;
+    font-family: 'Inter',sans-serif;
+    color: rgba(1, 88, 152, 1);
+    display: flex;
+    align-items: center;
+    margin:40px 0 20px 102px;
+    
+}
+
+.Breadcrumb-Nav li{
+    display: inline-block;
+    font-size: 16px;
+}
+
+.Breadcrumb-Nav li::after{
+    content: " > ";
+    font-weight: bold;
+}
+
+.Breadcrumb-Nav li:last-child::after{
+    content: "";    
+}
+
+.Breadcrumb-Nav a{
+    font-weight: normal;
+    text-decoration: none;
+    color: rgba(1, 88, 152, 1);
+}
+
+.Breadcrumb-Nav a:hover{
+    text-decoration: underline;
+}
+
+/* Privacy Policy Container */
+
 .privacy{
     width: 100%;
     padding-left: 450px;
