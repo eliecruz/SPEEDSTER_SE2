@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.product{
+    background-color: #f9f9f9;
+    width: 100%;
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Product Container */
+.product .product-container{
+    background-color: white;
+    height: 523px;
+    width: 549px;
+    position: relative;
+    flex-direction: column;
+    margin: 50px 85px 50px 189px;
+}
+
+.product .desc-container{
+    background-color: transparent;
+    height: 391px;
+    width: 486px;
+    position: relative;
+    flex-direction: column;
+    margin: 50px 189px 50px 0px;
+}
+
+.price{
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    color: black;
+    margin-bottom: 18px;
+}
+
+.type{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 300px;
+    color: #808080;
+    margin-bottom: 9px;
+}
+
+.line{
+    background-color: #808080;
+    height: 1px; /* Line thickness */
+    border: none; /* No border */
+    margin-bottom: 35px;
+}
+
+.quantity-container{
+    width: 242px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+   
+    margin-bottom: 17px;
+}
+
+.quantity-container .quantity{
+    font-family: "Roboto", sans-serif;
+}
+
+.quantity-container .btn-quantity{
+    height: 38px;
+    width: 163px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #c4c4c4;
+}
+
+.btn-quantity .minus, .number, .plus{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-weight: 500;
+}
+
+.product .desc-container .quantity-container .btn-quantity .number{
+    border-right: 1px solid #808080;
+    border-left: 1px solid #808080;
+}
+
+.product .desc-container button{
+    font-family: "Roboto",sans-serif;
+    width: 100%;
+}
+
+.product .desc-container button.btn-buy{
+    padding: 10px;
+    background-color: rgba(1, 88, 152, 1);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 17px;
+    height: 48px;
+    width: 183px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.product .desc-container button.btn-cart-wishlist{
+    padding: 10px;
+    background-color: white ;
+    color: #0c5795;
+    border: 2px solid #0c5795;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 17px;
+    height: 48px;
+    width: 183px;
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+}
+
+.product .desc-container i{
+    margin-right: 15px;
+}
+
+/* Tabs */
+.tabs-container{
+    margin: 50px 189px 25px 189px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+}
+.tabs .tabs-container a{
+    margin: 0 20px;
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+
+}
+
+
+
+
+/* Specs */
+.specs{
+    width: 100%;
+    height: auto;
+    font-family: "Montserrat", sans-serif;
+}
+
+.specs h1{
+    display: block;
+    text-align: center;
+}
+
+.specs .specs-container{        
+    margin: 25px 189px;
+}
+
+.specs .specs-container ol li{
+    font-family: 'Roboto', sans-serif;
+    margin: 5px 0;
+    font-size: 14px;
+    text-decoration: none
+}
+
+.specs .specs-container ul{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    margin: 0px 20px;
+    list-style-type: disc;
+}
+
+
+/* Line */
+.page-line{
+    background-color: #808080;
+    height: 1px; /* Line thickness */
+    border: none; /* No border */
+    margin: 20px 189px;
+}
+
+/* Compatibility */
+.compatibility{
+    width: 100%;
+    height: auto;
+    font-family: "Montserrat", sans-serif;
+}
+
+.compatibility h1{
+    display: block;
+    text-align: center;
+}
+
+.compatibility .compatibility-container{        
+    margin: 25px 189px;
+}
+
+.compatibility .compatibility-container ol li{
+    font-family: 'Roboto', sans-serif;
+    margin: 5px 0;
+    font-size: 14px;
+    text-decoration: none
+}
+
+.compatibility .compatibility-container ul{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    margin: 0px 20px;
+    list-style-type: disc;
+}
