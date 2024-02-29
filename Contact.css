@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Breadcrumb Nav */
+.Breadcrumb-Nav{
+    list-style: none;
+    font-family: 'Inter',sans-serif;
+    color: rgba(1, 88, 152, 1);
+    display: flex;
+    align-items: center;
+    margin:40px 0 20px 160px;
+    
+}
+
+.Breadcrumb-Nav li{
+    display: inline-block;
+    font-size: 16px;
+}
+
+.Breadcrumb-Nav li::after{
+    content: " > ";
+    font-weight: bold;
+}
+
+.Breadcrumb-Nav li:last-child::after{
+    content: "";    
+}
+
+.Breadcrumb-Nav a{
+    font-weight: normal;
+    text-decoration: none;
+    color: rgba(1, 88, 152, 1);
+}
+
+.Breadcrumb-Nav a:hover{
+    text-decoration: underline;
+}
+
+/* Main Container */
+
+.main-container h1{
+    font-family: "Montserrat", sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+/* Contact Container */
+
+.main-container .contact-container .contact-contents{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    margin:63px 0;
+}
+
+.main-container #gmail-container{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-container #telephone-container{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-container #location-container{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Form Container */
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0 100px 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+   
+}
+
+.form-container .feedback-form{
+    background-color: white;
+    margin-top: 30px;
+}
+
+.form-container .feedback-details{
+    height: 637px;
+    width: 572px;
+}
+form .feedback-details{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+form .feedback-details .details-row{
+    display: flex;
+    justify-content: space-between;
+}
+form .feedback-details .input-box{
+    margin: 20px 0 12px 0;
+    width: calc(100% / 2 - 20px);
+
+}
+
+form .feedback-details .input-box input, select{
+    height: 45px;
+    width: 100%;
+    background-color: rgb(242,244,248);
+    border: none;
+    border-bottom: 1px solid;
+    border-color: rgba(193, 199, 205, 1);
+    border-radius: 5px;  
+    padding-left: 16px;
+    margin-top: 12px;
+}
+
+form .feedback-details #email-input{
+    height: 45px;
+    width: 572px;
+    background-color: rgb(242,244,248);
+    border: none;
+    border-bottom: 1px solid;
+    border-color: rgba(193, 199, 205, 1);
+    border-radius: 5px;  
+    padding-left: 16px;
+    margin-top: 12px;
+}
+
+form .feedback-details .input-box textarea{
+    height: 256px;
+    width: 572px;
+    background-color: rgb(242,244,248);
+    border: none;
+    border-bottom: 1px solid;
+    border-color: rgba(193, 199, 205, 1);
+    border-radius: 5px; 
+    resize: none;
+    font-family: "Roboto", sans-serif;
+    margin-top: 12px;
+    padding: 16px;
+}
+
+form button{
+    height: 48px;
+    width: 100%;
+    border: none;
+    background-color: #015898;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    border-radius: 5px;
+}
