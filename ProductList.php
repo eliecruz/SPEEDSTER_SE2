@@ -1,176 +1,228 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
-    <link rel="stylesheet" type="text/css" href="ProductList.css">
-    <link rel="stylesheet" type="text/css" href="Header&Footer.css">
-    <title>Product List</title>
-</head>
-<body>
-    <?php
-    include("Header.php");
-    ?>
+*{
+    margin: 0;
+    padding: 0;
+}
 
-    <div class="Breadcrumb-Nav">
-        <ol>
-            <li><a href="Home.php">Home</a></li>
-            <li>Product List</li>
-        </ol>
-    </div>
+/* Breadcrumb Nav */
+.Breadcrumb-Nav{
+    list-style: none;
+    font-family: 'Inter',sans-serif;
+    color: rgba(1, 88, 152, 1);
+    display: flex;
+    align-items: center;
+    margin:40px 0 20px 102px;
+    
+}
 
-    <div class="product-list">
-        <h1>Printers</h1>
+.Breadcrumb-Nav li{
+    display: inline-block;
+    font-size: 16px;
+}
 
-        <div class="product-list-container">
-            <div class="sidebar-container">
-                <form action="">
-                    <div class="filter">    
-                        <p>Filter</p>
-                    </div>
+.Breadcrumb-Nav li::after{
+    content: " > ";
+    font-weight: bold;
+}
 
-                    <div class="filter-title">
-                        <p>Brand</p>
-                    </div>
+.Breadcrumb-Nav li:last-child::after{
+    content: "";    
+}
 
-                    <div class="filter-container">
-                        <div class="checkbox">
-                            <input type="checkbox" id="" name="" value="">
-                            <label for="vehicle1">Brother</label><br>
-                        </div>
-                        <div class="checkbox">
-                            <input type="checkbox" id="" name="" value="">
-                            <label for="vehicle1">Epson</label><br>
-                        </div>
-                        <div class="checkbox">
-                            <input type="checkbox" id="" name="" value="">
-                            <label for="vehicle2">Printer 3</label><br>
-                        </div>
-                        
-                    </div>
+.Breadcrumb-Nav a{
+    font-weight: normal;
+    text-decoration: none;
+    color: rgba(1, 88, 152, 1);
+}
 
-                    <div class="filter-title">
-                        <p>Printer Type</p>
-                    </div>
+.Breadcrumb-Nav a:hover{
+    text-decoration: underline;
+}
 
-                    <div class="filter-container">
-                        <div class="checkbox">
-                            <input type="checkbox" id="" name="" value="">
-                            <label for="vehicle1">Type 1</label><br>
-                        </div>
-                        <div class="checkbox">
-                            <input type="checkbox" id="" name="" value="">
-                            <label for="vehicle1">Type 2</label><br>
-                        </div>
-                        <div class="checkbox">
-                            <input type="checkbox" id="" name="" value="">
-                            <label for="vehicle2">Type 3</label><br>
-                        </div>
-                    </div>
+/* Sort Container */
+.sort-container{
+    display: flex;
+    justify-content: space-between;
+    font-family: "Roboto", sans-serif;
+    width: 1306px;
+    margin: 0 102px;
+}
 
-                    <div class="filter-title">
-                        <p>Function</p>
-                    </div>
-                    
-                    <div class="filter-container">
-                        <div class="checkbox">
-                            <input type="checkbox" id="" name="" value="">
-                            <label for="vehicle1">Print Only</label><br>
-                        </div>
-                        <div class="checkbox">
-                            <input type="checkbox" id="" name="" value="">
-                            <label for="vehicle1">Scan</label><br>
-                        </div>
-                        <div class="checkbox">
-                            <input type="checkbox" id="" name="" value="">
-                            <label for="vehicle2">Copy</label><br>
-                        </div>
-                    </div>
+.sort-container h1{
+    font-family: 'Montserrat', sans-serif;
+    color: #0b416f;
+    margin: 36px 0;
+ 
+}
 
-                    <div class="filter-title">
-                        <p>Connections</p>
-                    </div>
+.sort{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
 
-                    <div class="filter-container">
-                        <div class="checkbox">
-                            <input type="checkbox" id="" name="" value="">
-                            <label for="vehicle1">Ethernet Connection</label><br>
-                        </div>
-                        <div class="checkbox">
-                            <input type="checkbox" id="" name="" value="">
-                            <label for="vehicle1">USB</label><br>
-                        </div>
-                        <div class="checkbox">
-                            <input type="checkbox" id="" name="" value="">
-                            <label for="vehicle2">Wireless Connection</label><br>
-                        </div>
-                    </div>
+.sort-container select{
+    border-radius: 10px;
+    padding: 5px;
+    font-family: "Roboto",sans-serif;
+}
 
-                    <div class="clear-filter">
-                        <input type="reset" value="Clear Filter">
-                    </div>
-                </form>
-            </div>
+/* Product List */
+.product-list{
+    background-color: white;
+    width: 100%;
+    
+}
 
-            <div class="list-container">
-                <div class="product-container">
-                    <div class="product" id="product">
-                        <img src="" alt="">
-                        <div class="info" id="info">
-                            <p class="name">Epson M100 Mono Ink Tank Printer</p>
-                            <p class="brand">EPSON</p>
-                            <p class="price">₱6,815.00</p>
-                        </div>
-                        
-                        <div class="view-container">
-                            <div class="view-btn">
-                                <p>View Product</p>
-                            </div>
-                        </div>
-                    </div>
+.product-list-container{
+    display: flex;
+    margin-bottom: 10%;
+}
 
-                    <div class="product" id="product">
-                        <img src="" alt="">
-                        <div class="info" id="info">
-                            <p class="name">Epson L3210</p> 
-                            <p class="brand">EPSON</p>
-                            <p class="price">₱5,200.00</p>
-                        </div>
-                        <div class="view-container">
-                            <div class="view-btn">
-                                <p>View Product</p>
-                            </div>
-                        </div>
-                        
-                    </div>
+.product-list-container .sidebar-container{
+    width: 250px;
+    height: auto;
+    margin: 0px 102px;
+    border: 1px solid #808080;
+    /* box-shadow: 0 4px 4px #808080; */
+    box-shadow: 0 4px 50px rgba(0, 0, 0, 0.1);
 
-                    <div class="product"  id="product">
-                        <img src="" alt="">
-                        <div class="info" id="info">
-                            <p class="name">Brother DCP-T420W- Wireless All in One Printer</p>
-                            <p class="brand">BROTHER</p>
-                            <p class="price">₱7,380.00</p>
-                        </div>
-                        <div class="view-container">
-                            <div class="view-btn">
-                                <p>View Product</p>
-                            </div>
-                        </div>
-                    </div>
+}
 
-                </div>
-               
-            </div>
-        </div>
-       
-    </div>
+.product-list-container .sidebar-container form .filter{
+    background-color: #0b416f;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
 
-    <?php
-    include("Footer.php");
-    ?>
-</body>
-</html>
+form .filter-title{
+    background-color: white;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    border-top: 1px solid #808080;
+    border-bottom: 1px solid #808080;
+}
+
+form .filter-container{
+    background-color: white;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 10px;
+}
+
+form .filter-container .checkbox{
+    font-family: 'Roboto', sans-serif;
+}
+
+form .clear-filter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form .clear-filter input{
+    height: 45px;
+    width: 170px;
+    background-color: #015898;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    border: none;
+    border-radius: 30px;
+    margin-top: 30px;
+}
+
+/* Product List Container */
+
+.list-container{
+    height: 770px;
+    width: 955px;
+    border-radius: 10px;
+    box-shadow: 0 4px 50px rgba(0, 0, 0, 0.1);
+}
+
+.list-container .product-container{
+    display: flex;
+    margin-top: 43px;
+    margin-left: 73px;
+}
+ #product{
+    width: 230px;
+    height: 330px;
+    margin-right: 64px;
+    font-family: "Roboto", sans-serif;
+}
+
+ #info{
+    height: 65px;
+}
+
+ #info p{
+    padding: 5px 0px;
+}
+
+#product img{
+    width: 230px;
+    height: 178px;
+}
+
+#info .name{
+    width: 200px;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+#info .brand{ 
+
+    width: 200px;
+    color: #808080;
+    font-size: 11px;
+}
+
+#info .price{
+
+    width: 200px;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#product .view-container{
+    width: 230px;
+    display: flex;
+    justify-content: center;
+}
+
+#product .view-container .view-btn{
+    background-color: #0b416f;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 15px;    
+    width: 145px;
+    height: 30px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#product .view-container .view-btn p{
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+    
+}
