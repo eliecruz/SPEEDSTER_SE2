@@ -38,18 +38,40 @@
     text-decoration: underline;
 }
 
+/* Sort Container */
+.sort-container{
+    display: flex;
+    justify-content: space-between;
+    font-family: "Roboto", sans-serif;
+    width: 1306px;
+    margin: 0 102px;
+}
+
+.sort-container h1{
+    font-family: 'Montserrat', sans-serif;
+    color: #0b416f;
+    margin: 36px 0;
+ 
+}
+
+.sort{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.sort-container select{
+    border-radius: 10px;
+    padding: 5px;
+    font-family: "Roboto",sans-serif;
+}
+
 /* Product List */
 .product-list{
     background-color: white;
     width: 100%;
     
-}
-
-.product-list h1{
-    font-family: 'Montserrat', sans-serif;
-    color: #0b416f;
-    margin: 36px 102px;
- 
 }
 
 .product-list-container{
@@ -129,9 +151,7 @@ form .clear-filter input{
     height: 770px;
     width: 955px;
     border-radius: 10px;
-    /* box-shadow: 0px 0px 50px 5px #0000; */
     box-shadow: 0 4px 50px rgba(0, 0, 0, 0.1);
-    
 }
 
 .list-container .product-container{
