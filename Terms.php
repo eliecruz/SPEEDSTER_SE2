@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terms of Use</title>
+    <link rel="stylesheet" href="Header&Footer.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="Terms.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="Terms.css">
-    <link rel="stylesheet" type="text/css" href="Header&Footer.css">
-    <title>Terms of Use</title>
 </head>
 <body>
     <?php
-    include('Header.php');
+    include('Header.php')
     ?>
 
-     <div class="Breadcrumb-Nav">
+    <div class="Breadcrumb-Nav">
         <ol>
             <li><a href="Home.php">Home</a></li>
             <li>Terms of Use</li>
         </ol>
     </div>
+
 
     <div class="terms">
         <div class="text">
@@ -30,7 +32,7 @@
             
             <h3>1. Use of the Website:</h3>
             <h5>1.1 Eligibility:</h5>
-            <p>You must be at least 18 years old to use our website or services. By using our website, you represent and warrant that you are at least 18 years old.</p>
+            <p>"To use our website and services, individuals under 18 should be guided by a parent or guardian who is 18 years or older. By accessing our site, you confirm that you have obtained necessary consent and guidance from a responsible adult."</p>
             <h5>1.2 Account Registration:</h5>
             <p>To access certain features, you may be required to create an account. You are responsible for maintaining the confidentiality of your account information.</p>
             <h5>1.3 Accuracy of Information:</h5>
@@ -78,8 +80,11 @@
         </div>
     </div>
 
+
     <?php
-    include("Footer.php")
+    include('Footer.php');
     ?>
+
 </body>
+
 </html>
