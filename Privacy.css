@@ -3,6 +3,35 @@
     margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
+.privacy{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0 100px 0;
+
+}
+.text h1{
+    margin-top: 20px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.text h3{
+    margin-top: 40px;
+    font-size: 24px;
+}
+
+.text h5{
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+.text p{
+    width: 648px;
+    font-size: 16px;
+    margin-top: 20px;
+}
 
 /* Breadcrumb Nav */
 .Breadcrumb-Nav{
@@ -37,32 +66,4 @@
 
 .Breadcrumb-Nav a:hover{
     text-decoration: underline;
-}
-
-/* Privacy Policy Container */
-
-.privacy{
-    width: 100%;
-    padding-left: 450px;
-
-}
-.privacy .text h1{
-    margin-top: 20px;
-    font-size: 30px;
-}
-
-.privacy .text h3{
-    margin-top: 40px;
-    font-size: 16px;
-}
-
-.privacy .text h5{
-    margin-top: 40px;
-    font-size: 14px;
-}
-
-.privacy .text p{
-    width: 648px;
-    font-size: 14px;
-    margin-top: 20px;
 }
