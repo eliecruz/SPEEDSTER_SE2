@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy</title>
+    <link rel="stylesheet" href="Header&Footer.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="Privacy.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="Privacy.css">
-    <link rel="stylesheet" type="text/css" href="Header&Footer.css">
-    <title>Privacy Policy</title>
 </head>
 <body>
     <?php
-    include('Header.php');
+    include('Header.php')
     ?>
-
-     <div class="Breadcrumb-Nav">
+    <div class="Breadcrumb-Nav">
         <ol>
             <li><a href="Home.php">Home</a></li>
             <li>Privacy Policy</li>
         </ol>
     </div>
 
-    <div class="privacy">
+<div class="privacy">
         <div class="text">
             <h1>Privacy Policy</h1>
             <h3>Inbilla Trading</h3>
@@ -66,5 +66,8 @@
     <?php
     include('Footer.php');
     ?>
+
 </body>
+
 </html>
+
