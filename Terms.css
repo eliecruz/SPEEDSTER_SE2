@@ -3,40 +3,11 @@
     margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
-.terms{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 50px 0 100px 0;
 
-}
-.text h1{
-    margin-top: 20px;
-    font-size: 30px;
-    display: flex;
-    justify-content: center;
-}
+/* Breadcrumb */
 
-.text h3{
-    margin-top: 40px;
-    font-size: 24px;
-}
-
-.text h5{
-    margin-top: 40px;
-    font-size: 20px;
-}
-
-.text p{
-    width: 648px;
-    font-size: 16px;
-    margin-top: 20px;
-}
-
-/* Breadcrumb Nav */
 .Breadcrumb-Nav{
     list-style: none;
-    font-family: 'Inter',sans-serif;
     color: rgba(1, 88, 152, 1);
     display: flex;
     align-items: center;
@@ -47,6 +18,7 @@
 .Breadcrumb-Nav li{
     display: inline-block;
     font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .Breadcrumb-Nav li::after{
@@ -66,4 +38,40 @@
 
 .Breadcrumb-Nav a:hover{
     text-decoration: underline;
+}
+
+
+/* Terms of Use */
+
+.terms{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0 100px 0;
+}
+
+.terms .text{
+    font-family: 'Montserrat', sans-serif;
+    width: 648px;
+}
+
+.terms .text h1{
+    margin-top: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.terms .text h3{
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+.terms .text h5{
+    margin-top: 40px;
+    font-size: 16px;
+}
+
+.terms .text p{
+    margin-top: 20px;
+    font-size: 16px;
 }
