@@ -27,7 +27,7 @@
             <h1>Privacy Policy</h1>
             <h3>Inbilla Trading</h3>
             <p>At Inbilla Trading, we are committed to safeguarding the privacy of our users and ensuring the security of their personal information. This Privacy Policy outlines how we collect, use, disclose, and protect your data when you use our website or engage with our services.</p>
-            <h3>1. Information We Collect</h3>
+            <h3>1. Use of the website</h3>
             <h5>1.1 Information We Collect:</h5>
             <p>When you create an account, place an order, or interact with our website, we may collect personal information such as your name, email address, phone number, and shipping address.</p>
             <h5>1.2 Transaction Data:</h5>
@@ -70,4 +70,3 @@
 </body>
 
 </html>
-
